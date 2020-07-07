@@ -1,0 +1,31 @@
+
+<h1>{{player1}} vs {{player2}} <span *ngIf="currentRoom">[{{currentRoom}}]</span></h1>
+
+
+<!-- <h2 *ngIf="winner">
+    Player {{winner}} won the game!
+</h2> -->
+
+<main>
+    <app-tile 
+        *ngFor="let val of tiles; let i = index"
+        [value] = "val"
+        [ready] = "ready"
+        (click) = "makeMove(i)">
+    </app-tile>
+</main>
+
+<br>
+
+<button nbButton outline status="danger" size="giant" (click)="createGame()">Create new Game</button>
+<button nbButton outline status="info" size="giant" (click)="joinGame()">Join Game</button>
+
+<div *ngIf="waiting">
+    <h1>Opponent's turn</h1>
+</div>
+
+
+
+
+
+
