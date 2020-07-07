@@ -14,7 +14,7 @@ import { DialogComponent } from './dialog/dialog.component';
 import { NgTemplateOutlet } from '@angular/common';
 import { Dialog2Component } from './dialog2/dialog2.component';
 import { EndDialogComponent } from './end-dialog/end-dialog.component';
-const config: SocketIoConfig = {url: "https://ng-tic-tac-toe1.herokuapp.com", options: {}};
+const config: SocketIoConfig = {url: "https://tic-tac-toe-server1.herokuapp.com/", options: {}};
 
 
 @NgModule({
